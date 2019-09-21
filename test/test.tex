@@ -1,0 +1,30 @@
+\documentclass[UTF8]{ctexart}		%使用中文版的article文档类型排版，并选择UTF8编码格式
+\usepackage{amsmath}			%使用宏包，这里是调用公式宏包，可以调用多个宏包
+\begin{document}				%开始写文章
+
+\title{LaTeX入门学习}				%大括号里填写标题
+\author{@wtl}					%大括号里写作者姓名
+\date{\today}					%大括号里写日期，\today会自动会生成当前日期
+\maketitle 						%写了上述内容后一定要添加这个，制作标题，否则上面内容都是无效的
+
+\begin{abstract}%摘要部分
+\small\centering这是一篇关于LaTeX入门学习的联系文档
+\end{abstract}%结束摘要
+
+\tableofcontents %表示目录部分开始
+\section{LaTeX基本知识}	%目录的前缀页面都会自动排版，不需要手动排版
+\section{LaTeX入门实践}	
+\addcontentsline{toc}{section}{参考文献}	%用来添加文献的标准方式
+\section{附录}	%要写的附录
+
+This is my first document.
+
+Happy Tex ing!
+
+\section{文字}
+特可爱排版。
+\section{数学}
+\[
+a^2+b^2 = c^2
+\]
+\end{document}	%结束写文章
